@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+[class*="col-"] {
+	float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Merriweather', serif;
+}
+
+nav, .learn-more, p {
+	font-family: 'Raleway', sans-serif;
+}
+
+nav {
+	padding: 8px 0px 3px 15px;
+	overflow: hidden;
+	height: auto;
+}
+
+nav div a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: white;
+	line-height: 1.2;
+}
+
+nav div.nav-left {
+	float: left;
+}
+
+nav div.nav-right {
+	float: right;
+}
+
+nav div.nav-right a {
+	padding-right: 15px;
+}
+
+div.nav-and-headshot {
+	text-align: center;
+	background-image: url(hands.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #999;
+	height: 85vh;
+	border: 1px solid transparent;
+}
+
+div.headshot h2.slogan {
+	position: relative;
+	font-size: 3.2rem;
+	color: whitesmoke;
+	font-weight: 700;
+	background-color: black;
+	opacity: .7;
+	width: 18ch;
+	margin-left: auto;
+	margin-right:auto; 
+	margin-top: 30vh;
+	
+}
+
+div.headshot h2.slogan2 {
+	position: relative;
+	margin-top: -1.25ch;
+	font-size: 3.2rem;
+	color: whitesmoke;
+	font-weight: 700;
+	background-color: black;
+	opacity: .7;
+	width: 14ch;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+div.headshot a.learn-more {
+	position: relative;
+	font-size: 2rem;
+	color: red;
+	font-weight: 800;
+	text-decoration: none;
+}
+
+div.process {
+	padding-top: 9vh;
+	padding-bottom: 9vh;
+  background-color: white;
+	text-align:left;
+}
+div.process h2 {
+	text-align: center;
+	font-size: 3.75rem;
+	color: navy;
+}
+
+div.process h3 {
+	text-align: center;
+	font-size: 2.25rem;
+}
+
+div.process p {
+	width: 66%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	
+}
+
+div.pricing-explanation {
+	background-color: #F0F0F0;
+	padding-top: 9vh;
+	padding-bottom: 9vh;
+}
+
+div.pricing-explanation p {
+	width: 66%;
+	margin: 0 auto;
+	font-size: 1.2rem;
+}
+
+div.pricing-explanation {
+	text-align: center;
+	font-size: 3.75rem;
+	color: navy;
+}
+
+div.prices {
+	padding-top: 9vh;
+	padding-bottom: 9vh;
+}
+
+div.prices h2 {
+	text-align: center;
+	font-size: 3.75rem;
+	color: navy;
+}
+
+div.prices div {
+	padding: 2ch
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
