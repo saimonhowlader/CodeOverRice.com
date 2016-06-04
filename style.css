@@ -35,6 +35,10 @@ section.process {}
 	padding-bottom: 6ch;
 }
 
+.process-intro h2 {
+	color: #152b16
+}
+
 .process-intro p {
 	max-width: 60ch;
 	margin: 0 auto;
@@ -50,7 +54,7 @@ img {
 	margin: 0;
 }
 .step-one {
-	background-color: #f0f0f0;
+	background-color: #f7f4ea;
 	padding-top: 0;
 	padding-bottom: ch;
 	margin-top: 0;
@@ -64,7 +68,8 @@ img {
 }
 
 .step-three {
-	background-color: #f0f0f0;
+	height: 55vh;
+	background-color: #f7f4ea;
 	padding-top: 1ch;
 	padding-bottom: 10ch;
 }
@@ -83,4 +88,8 @@ img {
 	border-color: blue;
 	color: blue;
 	display: block;
+}
+
+.mdl-layout__header-row {
+	background-color: #224524;
 }
