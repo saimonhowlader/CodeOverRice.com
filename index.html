@@ -1,98 +1,117 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-	<title>SaiSun Designs</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+	<script src="./material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<title>SaiSun Designs</title>
 </head>
 
 <body>
-	<div class="nav-and-headshot">
-		<nav>
-			<div class="nav-left">
-				<a href="#">SSD</a>
+	<div class="mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--scroll">
+			<img class="mdl-layout-icon">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout__title">SaiSun Designs</span>
+				<div class="mdl-layout-spacer"></div>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#">Process</a>
+					<a class="mdl-navigation__link" href="#">Pricing</a>
+					<a class="mdl-navigation__link" href="#">Contact us</a>
+				</nav>
 			</div>
-			<div class="nav-right">
-				<a href="#">Process</a>
-				<a href="#">Pricing</a>
-				<a href="#">Contact</a>
-			</div>
-		</nav>
-
-		<div class="headshot row col-12">
-			<h2 class="slogan">We make websites for</h2>
-			<h2 class="slogan2">mom-and-pops.</h2>
-			<a href="#" class="learn-more">Learn More</a>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout__title">Material Design Lite</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#">Process</a>
+				<a class="mdl-navigation__link" href="#">Pricing</a>
+				<a class="mdl-navigation__link" href="#">Contact us</a>
+				<a class="mdl-navigation__link" href="#">Saimon Howlader</a>
+				<a class="mdl-navigation__link" href="#">Sean Sun</a>
+			</nav>
 		</div>
+		<main>
+			<div class="slogan-section mdl-layout__content">
+				<h2 class="mdl-typography--text-center">We make websites for<br>mom-and-pops.</h2>
+				<h3 class="mdl-typography--text-center"><a href="#" class="learn-more">Learn More</a></h3>
+			</div>
+			<section class="process">
+				<div class="process-intro">
+					<h2>We believe in "no bullshit."</h2>
+					<p class="mdl-typography--body-1">We don't have any crazy philosophies when it comes to our workflow. We're like any other business, we like our clients happy. We've found that they are most satisfied when they are involved in every single step of the process. If you've ever hired a contractor for some home development project that probably makes perfect sense.</p>
+				</div>
+				<div class="step-one">
+					<div class="desktop-centered mdl-grid">
+						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+							<h3>We study your business</h3>
+							<p class="mdl-typography--body-1">
+								First we all meet and talk about your business, your customers, and most importantly your product. You tell us what you need from a website and we spend the next week obsessively blueprinting and researching. We then come back with a few plans of attack and then discuss how to move forward.
+							</p>
+						</div>
+						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
+					</div>
+				</div>
+
+				<div class="step-two">
+					<div class="desktop-centered mdl-grid">
+						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
+						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+							<h3>A bunch of mock-up designs</h3>
+							<p class="mdl-typography--body-1">
+								The most important aspect of the website is the design, even before the coding.</p>
+							<p class="mdl-typography--body-1">
+								After we decide where to go with this project we will spend a few days coming up with various lauouts and designs. </p>
+							<p class="mdl-typography--body-1">
+								You will then review them together and if necessary we will revivse over and over until everyone is satisfied.</p>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="step-three">
+					<div class="desktop-centered mdl-grid">
+						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+							<h3>Build</h3>
+							<p class="mdl-typography--body-1">
+								After we settle on the final design, we can begin the actual coding. We make sure that our websites work in all browsers, are fast and show up as one of the top Google search results.
+							</p>
+							<p>Every project is different depending on the purpose of the website and how easily our clients want to make changes afterwards. As such, this step can take a couple weeks.</p>
+						</div>
+						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
+					</div>
+				</div>
+			</section>
+			<section class="pricing">
+				<div class="pricing-intro">
+					<h2>Talking money</h2>
+					<p class="mdl-typography--body-1">We are trying out a subscription payment model based on goodwill and trust between us and our clients. You pay us a small percentage of the total fee at certain milestones of the project and if you feel unsatisfied at any point you can jump ship.</p>
+					<p class="mdl-typography--body-1">However, if you'd like to work with a standard down payment model that option is also open. For the most part we are pretty flexible with our payment plans... as long as we're all signing contracts!</p>
+				</div>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--3-col">
+						<h3>Price Range</h3>
+						<p>We'll just build you a plain old Squarespace</p>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Price Range</h3>
+						<p>We'll just build you a plain old Squarespace</p>
+					</div>
+					<div class="mdl-cell mdl-cell--3-col">
+						<h3>Price Range</h3>
+						<p>We went all out. We got you new graphics, a new logo, we fucking rebranded your shit.</p>
+					</div>
+				</div>
+			</section>
+		</main>
 	</div>
-
-
-	<div class="process row col-12">
-		<h2>Our Process</h2>
-		<div class="main-steps row">
-			<div class="step-one col-4">
-				<h3>Prepare</h3>
-				<p>
-					After we've met and discussed what your needs are, we'll spend the next few days obsessively blueprinting and researching. We'll come back with a couple of plans of attack and then discuss how to go forward.
-				</p>
-			</div>
-			<div class="step-two col-4">
-				<h3>Design</h3>
-				<p>
-					Having decided on a direction to go towards, we'll be designing mockups for your review. Until we obtain your final approval on the design, we are happy to revise it over and over again based on your input.
-				</p>
-			</div>
-			<div class="step-three col-4">
-				<h3>Build</h3>
-				<p>
-					After we settle on the final design, we can begin the actual coding. After it's built, we'll be testing it and tweaking it until we have every pixel perfected. We'll make sure your site isn't buried deep into search engine results either!
-				</p>
-			</div>
-		</div>
-		<div class="step-four row col-12">
-			<h3>Launch week!</h3>
-			<p>
-				Now that it's all done, we'll launch your site with your approval. But it doesn't stop there -- we don't want to just leave you all alone with just a website. We offer complementary training and explanations on what we did so if you need to make alterations after our partnership comes to an end, you're well enabled..
-			</p>
-		</div>
-	</div>
-
-	<div class="pricing-explanation row col-12">
-		<h2>$$$PRICING$$$</h2>
-		<p>We understand your time is valuable and paying freelancers is also a risk and we respect that. So the way we've chosen to structure our pricing is so that you can jump ship at any point you decide that this venture isn't worth your time or money.</p>
-		<p>We can't actually offer you a price on how much it will cost to build your site because no project is the same. We CAN tell you that the average website will probably cost you around a new Toyota.</p>
-		<p>But working will us will cost you somewhere from $400 to $1500 depending on what and how much you want.</p>
-	</div>
-
-		<div class="prices row col-12">
-			<h2>Price Range</h2>
-			<div class="minimum-price col-3">
-				<p>We'll just build you a plain old Squarespace</p>
-			</div>
-			<div class="your-project col-6">
-				<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin </p>
-			</div>
-			<div class="maximum-price col-3">
-				<p>We went all out. We got you new graphics, a new logo, we fucking rebranded your shit.</p>
-			</div>
-		</div>
-
-
-	<div class="hire-us">
-		<div class="basic-form">
-			<p>YESYESYEESY </p>
-		</div>
-		<div class="optional-form">
-			<p>nonon </p>
-		</div>
-	</div>
-	<footer></footer>
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+	</script>
 </body>
-
-
 
 </html>
