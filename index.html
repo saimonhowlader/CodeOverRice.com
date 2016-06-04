@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="material.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="style.css">
 	<script src="./material.min.js"></script>
@@ -14,12 +14,12 @@
 
 <body>
 	<div class="mdl-layout mdl-js-layout">
-		<header class="mdl-layout__header mdl-layout__header--scroll">
+		<header class="mdl-layout__header mdl-layout--fixed-header">
 			<img class="mdl-layout-icon">
 			<div class="mdl-layout__header-row">
 				<span class="mdl-layout__title">SaiSun Designs</span>
 				<div class="mdl-layout-spacer"></div>
-				<nav class="mdl-navigation">
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
 					<a class="mdl-navigation__link" href="#">Process</a>
 					<a class="mdl-navigation__link" href="#">Pricing</a>
 					<a class="mdl-navigation__link" href="#">Contact us</a>
@@ -36,10 +36,11 @@
 				<a class="mdl-navigation__link" href="#">Sean Sun</a>
 			</nav>
 		</div>
-		<main>
-			<div class="slogan-section mdl-layout__content">
+		<main class="mdl-layout__content">
+				<div class="slogan-section page-content">
 				<h2 class="mdl-typography--text-center">We make websites for<br>mom-and-pops.</h2>
-				<h3 class="mdl-typography--text-center"><a href="#" class="learn-more">Learn More</a></h3>
+				<button class="mdl-button mdl-js-button mdl-button--fab"><i class="material-icons">keyboard_arrow_down</i></button>
+
 			</div>
 			<section class="process">
 				<div class="process-intro">
@@ -47,7 +48,7 @@
 					<p class="mdl-typography--body-1">We don't have any crazy philosophies when it comes to our workflow. We're like any other business, we like our clients happy. We've found that they are most satisfied when they are involved in every single step of the process. If you've ever hired a contractor for some home development project that probably makes perfect sense.</p>
 				</div>
 				<div class="step-one">
-					<div class="desktop-centered mdl-grid">
+					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
 						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
 							<h3>We study your business</h3>
 							<p class="mdl-typography--body-1">
@@ -60,7 +61,7 @@
 
 				<div class="step-two">
 					<div class="desktop-centered mdl-grid">
-						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
+						
 						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
 							<h3>A bunch of mock-up designs</h3>
 							<p class="mdl-typography--body-1">
@@ -70,7 +71,7 @@
 							<p class="mdl-typography--body-1">
 								You will then review them together and if necessary we will revivse over and over until everyone is satisfied.</p>
 						</div>
-						
+						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
 					</div>
 				</div>
 

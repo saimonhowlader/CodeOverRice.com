@@ -74,3 +74,13 @@ img {
 	margin-right: auto;
 	max-width: 120ch;
 }
+
+.mdl-navigation__link {
+	font-size: 16px;
+}
+
+.mdl-button {
+	border-color: blue;
+	color: blue;
+	display: block;
+}
