@@ -3,40 +3,37 @@
 
 <head>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
+	<link rel="stylesheet" href="material.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
-	<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 	<link rel="stylesheet" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="./material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<title>SaiSun Designs</title>
 </head>
 
 <body>
 	<script>
 		$(document).ready(function () {
-			var a = $(".nav").offset().top;
-
-			$(document).scroll(function () {
-				if ($(this).scrollTop() > a) {
-					$('.nav').css({
-						"background": "blue"
-					});
-				} else {
-					$('.nav').css({
-						"background": "transparent"
-					});
-				}
-			});
+			$("#p1").hover(function () {
+					$("#navBar").addClass("opaque");
+				},
+				function () {
+					$("#navBar").removeClass("opaque");
+				});
 		});
 	</script>
-	<div class="mdl-layout mdl-layout--no-desktop-drawer-button mdl-js-layout mdl-layout--fixed-header">
-		<header class="nav mdl-layout__header">
-			<div class="mdl-layout__header-row">
+
+
+
+	<div class="mdl-layout mdl-layout--no-desktop-drawer-button mdl-js-layout mdl-layout--fixed-header layout-transparent">
+		<header class="mdl-layout__header mdl-layout__header--transparent">
+
+			<div id="navBar" class="mdl-layout__header-row opaque-navbar">
 				<span class="mdl-layout__title">SaiSun Designs</span>
 				<div class="mdl-layout-spacer"></div>
-				<nav class="mdl-navigation mdl-layout--large-screen-only navMain">
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
 					<a class="mdl-navigation__link" href="#">Process</a>
 					<a class="mdl-navigation__link" href="#">Pricing</a>
 					<a class="mdl-navigation__link" href="#">Contact us</a>
@@ -56,67 +53,67 @@
 		</div>
 		<main class="mdl-layout__content">
 			<div class="slogan-section page-content">
-				<h2 class="mdl-typography--text-center">We make websites for<br>mom-and-pops.</h2>
-				<button class="mdl-button mdl-js-button mdl-button--fab"><i class="material-icons">keyboard_arrow_down</i></button>
+				<h2 id="p1" class="mdl-typography--text-center">We make websites for<br>mom-and-pops</h2>
+				<h3>because they matter.</h3>
 
 			</div>
+			<div class="philosophy">
+				<blockquote class="mdl-typography--body-4">We understand the core values of the mom-and-pop philosophy. Integrity, and <strong>doing it yourself.</strong> So working with us means not only an authentic website, but <strong>complimentary training.</strong></blockquote>
+			</div>
 			<section class="process">
-				<div class="process-intro">
-					<h2>You matter."</h2>
-					<p class="mdl-typography--body-1">We understand the mom-and-pop philosophy. Integrity and doing it yourself. So working with us means not only an authentic website, but complementary training.</p>
+				<div class="process-intro ">
+					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
+						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+							<h2>This Is How We Do It</h2>
+						</div>
+						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+							<p class="mdl-typography--body-1">This is how we do it.</p>
+						</div>
+					</div>
 				</div>
 				<div class="step-one">
 					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
-							<h3>Doing our Homework</h3>
+						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+							<div><h3>Doing our Homework</h3>
 							<p class="mdl-typography--body-1">
 								The first step is visiting you to talk about your business and what you want on the website. We'll be looking into what defines your brand identity and personality. Then we'll analyze these factors and compile a few plans of attack for you to consider. And we'll do it all over again if you don't like any of them.
 							</p>
+							</div>
 						</div>
-						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="imgpsh_fullsize.png" alt="Smiley face" height="100%" width="100%"></div>
 					</div>
 				</div>
-
 				<div class="step-two">
 					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-
-						<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
-							<h3>Designing Together</h3>
+						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+							<div class="rightpls"><h3>Designing Together</h3>
 							<p class="mdl-typography--body-1">
-								The most important aspect of the website is how it looks. When a customer visits the site, we want them to know instantly that it belongs to you. And the best people to review our designs are you and your customers. We'll come back with various layouts and mockups and you guys can tell us which ones you like. We'll revise it until you're satisfied.
-							</p>
+								One of the most important aspects of the website is how it looks. When a customer visits the site, we want them to know instantly that it belongs to you. And the best people to review our designs are you and your customers. We'll come back with various layouts and mockups and you guys can tell us which ones you like. We'll revise it until you're satisfied.
+							</p></div>
 						</div>
-						<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
 					</div>
 				</div>
-
 				<div class="step-three">
 					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<h3>We Build, you Learn?</h3>
-						<p class="mdl-typography--body-1">
-							No matter what method we use to build your website, we'll build it to the design specifications. We'll also make sure they load quickly, are responsive on every browser and device, and show up as one of the the top Google search results.
-						</p>
-						<p>Programmers at heart, we'll document the steps so that when we're done and ready for launch, you know how to change things around to your will.</p>
+						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
+							<div><h3>We Build, you Learn?</h3>
+							<p class="mdl-typography--body-1">
+								No matter what method we use to build your website, we'll build it to the design specifications. We'll also make sure they load quickly, are responsive on every browser and device, and show up as one of the the top Google search results.
+								<br> Programmers at heart, we'll document the steps so that when we're done and ready for launch, you know how to change things around to your will.</p></div>
+						</div>
 					</div>
-					<div class="step-image mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet"><img src="step1.jpg" alt="Smiley face" height="100%" width="100%"></div>
 				</div>
-
 			</section>
-			<section class="pricing">
-				<div class="pricing-intro">
+
+			<section class="training">
+				<div class="training-intro">
 					<h2>Sounds too good to be true? Like what you see?</h2>
 					<p>Let's talk about it then. We'll even visit you at your store!</p>
 				</div>
 			</section>
 		</main>
 	</div>
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js ">
 	</script>
-
-
-
-
-
 </body>
 
 </html>
