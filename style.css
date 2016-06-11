@@ -1,163 +1,283 @@
-.layout-transparent {
-  background: url('hands.jpg') center / cover;
-}
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
+h1 {
+	font-size: calc(3.375 * (.75rem + 1vh));
 }
 
-.slogan-section {
+h2 {
+	font-size: calc(2.25 * (.75rem + 1vh));
+}
+
+h3 {
+	font-size: calc(1.5 * (.75rem + 1vh));
+}
+
+p {
+	font-size: calc(.75rem + 1vh);
+	max-width: 60ch;
+}
+
+@media all and (min-width: 960px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+
+.layout-transparent {
+	background-color: black;
+}
+
+.layout-transparent .mdl-layout__header,
+.layout-transparent .mdl-layout__drawer-button {
+	/* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+	color: white;
+}
+
+header {
+	height: 7vh;
+}
+
+.mdl-navigation__link {
+	font-family: 'Oswald', sans-serif;
+}
+
+.slogan {
 	background-image: url(hands.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: #f3f3f3;
+	height: 70vh;
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
 }
 
-.slogan-section h2 {
+.whole-slogan {
+	margin: auto;
+	max-width: 60ch;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slogan h1 {
 	color: whitesmoke;
-	font-weight: 700;
+	font-family: 'Oswald';
+	font-weight: normal;
 	opacity: .7;
-	margin-top: 7vh;
-	font-size: 7rem;
 	line-height: 2ch;
-	padding-bottom: 13vh;
+}
+
+.slogan-part-1 {
 	text-align: left;
 	padding-left: 1ch;
 }
 
-
-
-.slogan-section h3 {
-	color: whitesmoke;
-	font-weight: 700;
-	opacity: .7;
-	margin-top: 3vh;
-	font-size: 5rem;
-	line-height: 2ch;
+.slogan-part-2 {
 	text-align: right;
-	padding-top: 20vh;
-	padding-bottom: 2vh;
 	padding-right: 1ch;
 }
 
-
 .philosophy {
-	padding-top: 7ch;
-	padding-bottom: 6ch;
-	background-color: #f7f4ea;
+	padding-top: ch;
+	padding-bottom: ;
+	background-color: whitesmoke;
+	height: 23vh;
 }
 
-.philosophy blockquote {
-	max-width: 60ch;
+.philosophy p {
+	color: #595959;
+	font-family: Montserrat;
+	max-width: 50ch;
 	margin: 0 auto;
-	font-size: 2rem;
 	line-height: 1.5;
 	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.philosophy a:link,
+a:visited {
+	color: #595959;
+	text-decoration: none;
+	border-bottom: 2px dashed darkgray;
+}
+
+.philosophy a:hover {
+	color: black;
+	border-bottom: 2px dashed black;
+}
+
+.process-background {
+	background-image: url(mindmap.png);
+	background-color: #F2EAD5;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	overflow-y: hidden;
+	height: 70vh;
 }
 
 .process-intro {
-	background-color: #fff;
 	padding-top: 10vh;
-	padding-bottom: 5vh;
+	padding-bottom: 7vh;
 }
 
 .process-intro h2 {
+	max-width: 400ch;
+	line-height: 1.5ch;
 	margin: 0 auto;
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: 400;
+	padding-bottom: 2vh;
 }
 
 .process-intro p {
+	max-width: 30ch;
 	margin: 0 auto;
 	padding-top: 2vh;
+	text-align: center;
+	border-top: 4px double #676767;
+	font-family: 'Lora', serif;
 }
-
-img {
-	padding: 0;
-	margin: 0;
-}
-
-
 
 .step-one {
-	background-color: #fff;
-	padding-top: 0;
-	padding-bottom: ch;
-	margin-top: 0;
+	height: 60vh;
+}
+
+.step-one .text {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 60ch;
+}
+
+.step-one h3 {
+	font-family: 'Quando';
+	text-align: center;
+	line-height: 1.5ch;
 }
 
 .step-one p {
-	max-width: 60ch;
+	font-family: 'Oswald';
 }
-
 
 .step-two {
-	background-color: #f3f3f3;
-	text-align: right;
+	height: 75vh;
 }
 
-
-/*.step-two p {
+.step-two .text {
+	text-align: center;
+	margin: auto;
 	max-width: 60ch;
 }
-*/
 
-.rightpls {
-	max-width: 60ch
+.step-two p {
+	font-family: 'Quicksand', sans-serif;
+	line-height: 2ch;
+}
+
+.step-two h3 {
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+	color: whitesmoke;
+}
+
+.step-two .secondword {
+	color: darkgray;
+}
+
+.step-two-three-background {
+	background-image: url(unsplash-bonus.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: cover;
+	width: 100% position: relative;
+	overflow-y: hidden;
 }
 
 .step-three {
-	background-color: #f7f4ea;
-	padding-top: 0;
-	padding-bottom: ch;
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
+	height: 75vh;
 }
 
-.step-three p {
+.step-three .text {
+	margin: auto;
 	max-width: 60ch;
 }
 
-.desktop-centered {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 120ch;
+.step-three h3 {
+	text-align: center;
+	font-family: 'Nixie One', cursive;
+	font-weight: bolder;
+	color: #e5ca9d;
+	line-height: 1.2ch;
 }
 
-.mdl-navigation__link {
-	font-size: 16px;
+.step-three .step-three-second-font {
+	font-family: 'sacramento', cursive;
+	font-weight: normal;
+	font-style: italic;
 }
 
-.mdl-button {
-	border-color: blue;
-	color: blue;
-	display: block;
+.step-three p {
+	color: aliceblue;
+	font-family: 'Quicksand', serif;
+	line-height: 1.2ch;
+	padding-bottom: 1vh;
 }
 
-.mdl-layout__header .mdl-layout__drawer-button {
-	position: absolute;
-	color: rgb(255, 255, 255);
-	background-color: transparent;
+.training {
+	padding: 0;
+	margin: 0;
+	background-image: url(jet-sky.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	position: relative;
+	overflow-y: hidden;
 }
 
-.opaque-navbar {
-    background-color: transparent;
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
+.training .text {
+	text-align: center;
 }
 
-.opaque-navbar.opaque {
-    background-color: hotpink;
-    height: 60px;
-    transition: background-color .5s ease 0s;
+.training-intro p {
+	line-height: 3ch;
+	margin: auto;
+}
+
+.get-a-quote {
+	text-align: center;
+}
+
+.get-a-quote p {
+	margin: 0 auto;
+}
+
+.contact {
+	background-color: antiquewhite;
+	padding:
+}
+
+footer {
+	background-color: darkslategrey;
+}
+
+.copyright {
+	padding-left: 5vw;
+	text-align: left;
+}
+
+.developers {
+	padding-left: 10vw;
+	text-align: right;
+	border: 3px solid red;
 }

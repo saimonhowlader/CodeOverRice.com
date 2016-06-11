@@ -1,119 +1,170 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300">
-	<link rel="stylesheet" href="material.css">
+
+	<title>Code Over Rice</title>
+
+	<meta name="description" content="Webdesign and developement based in NYC. We build websites for mom-and-pops.">
+
+	<meta charset="utf-8">
+
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One:400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel=' stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
 	<link rel="stylesheet" href="style.css">
+
 	<script src="./material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	<title>SaiSun Designs</title>
+
 </head>
 
 <body>
-	<script>
-		$(document).ready(function () {
-			$("#p1").hover(function () {
-					$("#navBar").addClass("opaque");
-				},
-				function () {
-					$("#navBar").removeClass("opaque");
-				});
-		});
-	</script>
-
-
 
 	<div class="mdl-layout mdl-layout--no-desktop-drawer-button mdl-js-layout mdl-layout--fixed-header layout-transparent">
 		<header class="mdl-layout__header mdl-layout__header--transparent">
-
 			<div id="navBar" class="mdl-layout__header-row opaque-navbar">
-				<span class="mdl-layout__title">SaiSun Designs</span>
+				<span class="mdl-layout__title">Code Over Rice</span>
 				<div class="mdl-layout-spacer"></div>
 				<nav class="mdl-navigation mdl-layout--large-screen-only">
 					<a class="mdl-navigation__link" href="#">Process</a>
-					<a class="mdl-navigation__link" href="#">Pricing</a>
-					<a class="mdl-navigation__link" href="#">Contact us</a>
+					<a class="mdl-navigation__link" href="#">Training</a>
+					<a class="mdl-navigation__link" href="#">Get a Quote</a>
 				</nav>
 			</div>
 		</header>
+
 		<div class="mdl-layout__drawer">
-			<span class="mdl-layout__title">SSD</span>
+			<span class="mdl-layout__title">Code Over Rice</span>
 			<nav class="mdl-navigation">
 				<a class="mdl-navigation__link" href="#">Process</a>
-				<a class="mdl-navigation__link" href="#">Pricing</a>
-				<a class="mdl-navigation__link" href="#">Contact us</a>
+				<a class="mdl-navigation__link" href="#">Training</a>
+				<a class="mdl-navigation__link" href="#">Get a Quote</a>
 				<a class="mdl-navigation__link" href="#">Saimon Howlader</a>
 				<a class="mdl-navigation__link" href="#">Sean Sun</a>
 			</nav>
 			<div class="mdl-layout__content"></div>
 		</div>
-		<main class="mdl-layout__content">
-			<div class="slogan-section page-content">
-				<h2 id="p1" class="mdl-typography--text-center">We make websites for<br>mom-and-pops</h2>
-				<h3>because they matter.</h3>
 
-			</div>
-			<div class="philosophy">
-				<blockquote class="mdl-typography--body-4">We understand the core values of the mom-and-pop philosophy. Integrity, and <strong>doing it yourself.</strong> So working with us means not only an authentic website, but <strong>complimentary training.</strong></blockquote>
-			</div>
-			<section class="process">
-				<div class="process-intro ">
-					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-							<h2>This Is How We Do It</h2>
-						</div>
-						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-							<p class="mdl-typography--body-1">This is how we do it.</p>
-						</div>
+		<main class="mdl-layout__content">
+
+			<section class="slogan">
+				<div class="whole-slogan mdl-grid mdl-grid--no-spacing">
+					<div class="text mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+						<h1 class="slogan-part-1">We build websites<br></h1>
+					</div>
+					<div class="text mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+						<h1 class="slogan-part-2"><br><br>for mom-and-pops.</h1>
 					</div>
 				</div>
-				<div class="step-one">
-					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-							<div><h3>Doing our Homework</h3>
-							<p class="mdl-typography--body-1">
+
+
+			</section>
+
+
+			<section class="philosophy">
+				<p>We understand the core values of the mom-and-pop philosophy. Integrity, and <strong>doing it yourself.</strong> So working with us not only means an authentic website, but <a href="#"><strong>complimentary training.</strong></a> </p>
+			</section>
+
+			<section class="process">
+				<div class="process-background">
+					<div class="process-intro">
+						<h2>This Is How We Do It</h2>
+						<p>It's Friday night, and I feel all right</p>
+					</div>
+					<div class="step-one mdl-grid ">
+						<div class="text mdl-cell mdl-cell--6-col">
+							<h3>Doing<br><span class="step-one-second-font">Our</span><br>Homework</h3>
+							<p>
 								The first step is visiting you to talk about your business and what you want on the website. We'll be looking into what defines your brand identity and personality. Then we'll analyze these factors and compile a few plans of attack for you to consider. And we'll do it all over again if you don't like any of them.
 							</p>
-							</div>
+						</div>
+						<div class="mdl-cell mdl-cell--6-col">
 						</div>
 					</div>
 				</div>
-				<div class="step-two">
-					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-							<div class="rightpls"><h3>Designing Together</h3>
-							<p class="mdl-typography--body-1">
+
+				<div class="step-two-three-background">
+					<div class="step-two mdl-grid ">
+						<div class="text mdl-cell mdl-cell--12-col">
+
+							<h3>Designing <br><span class="secondword">Together</span></h3>
+							<p>
 								One of the most important aspects of the website is how it looks. When a customer visits the site, we want them to know instantly that it belongs to you. And the best people to review our designs are you and your customers. We'll come back with various layouts and mockups and you guys can tell us which ones you like. We'll revise it until you're satisfied.
-							</p></div>
+							</p>
 						</div>
 					</div>
-				</div>
-				<div class="step-three">
-					<div class="desktop-centered mdl-grid mdl-grid--no-spacing">
-						<div class="mdl-cell mdl-cell--12-col mdl-grid mdl-grid--no-spacing">
-							<div><h3>We Build, you Learn?</h3>
-							<p class="mdl-typography--body-1">
+					<div class="step-three mdl-grid ">
+						<div class="mdl-cell mdl-cell--6-col">
+
+						</div>
+						<div class="text mdl-cell mdl-cell--6-col">
+							<h3>Hot Code<br><span class="step-three-second-font">Served Over</span><br>Rice</h3>
+							<p>
 								No matter what method we use to build your website, we'll build it to the design specifications. We'll also make sure they load quickly, are responsive on every browser and device, and show up as one of the the top Google search results.
-								<br> Programmers at heart, we'll document the steps so that when we're done and ready for launch, you know how to change things around to your will.</p></div>
+								<br>
+								<br> Programmers at heart, we'll document the steps so that when we're done and ready for launch, you know how to change things around to your will.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="training">
-				<div class="training-intro">
+
+				<div class="training-intro mdl-grid ">
+					<div class="text mdl-cell mdl-cell--12-col">
+
+						<h3>That's Right, Complimentary Training.</h3>
+						<p>
+							You are your cheapest employee.
+							<br> We respect that.
+							<br>Let's makes sure you know how to do it yourself.
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+
+			<section class="contact mdl-grid">
+				<div class="get-a-quote mdl-cell--12-col">
 					<h2>Sounds too good to be true? Like what you see?</h2>
 					<p>Let's talk about it then. We'll even visit you at your store!</p>
 				</div>
 			</section>
+
+
+			<footer>
+				<div class="mdl-grid">
+					<div class="copyright mdl-cell mdl-cell--6-col">
+						<p>© Copyright 2016. All rights reserved.</p>
+					</div>
+					<div class="developers mdl-cell mdl-cell--6-col">
+						<p>By <a href="https://www.google.com">Sean Sun</a> and <a href="http://www.saimonhowlader.com">Saimon Howlader</a></p>
+					</div>
+				</div>
+
+
+			</footer>
+
 		</main>
+
+
+
 	</div>
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js ">
 	</script>
+
 </body>
 
 </html>
