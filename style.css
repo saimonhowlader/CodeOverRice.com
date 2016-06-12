@@ -1,43 +1,51 @@
 h1 {
-	font-size: calc(3.375 * (.75rem + 1vh));
+	font-size: calc(5.063 * (.75rem + 1vw));
 }
 
 h2 {
-	font-size: calc(2.25 * (.75rem + 1vh));
+	font-size: calc(3.375 * (.75rem + 1vw));
+	line-height: 2ch;
 }
 
 h3 {
-	font-size: calc(1.5 * (.75rem + 1vh));
+	font-size: calc(2.25 * (.75rem + 1vw));
+	line-height: 2ch;
 }
 
 p {
-	font-size: calc(.75rem + 1vh);
-	max-width: 60ch;
-}
-
-@media all and (min-width: 960px) {
-	h1 {
-		font-size: 50px;
-	}
+	font-size: calc(.75rem + 1vw);
+	max-width: 75ch;
+	line-height: 2ch;
 }
 
 .layout-transparent {
-	background-color: black;
+	background-color: #95a5a6;
 }
 
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
 	/* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-	color: white;
+	color: whitesmoke;
 }
 
 header {
 	height: 7vh;
 }
 
-.mdl-navigation__link {
-	font-family: 'Oswald', sans-serif;
+.mdl-layout__title {
+	font-family: 'Sura', serif;
+	font-size: calc(1.5*(.75rem + 1vw));
+}
+
+.navBig {
+	font-family: 'Sura', serif;
+	font-size: calc(0.667 *(.75rem + 1vw));
+}
+
+.navSmall {
+	font-family: 'Sura', serif;
+	font-size: calc(1 *(.75rem + 1vw));
 }
 
 .slogan {
@@ -46,18 +54,19 @@ header {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 70vh;
+	height: 80vh;
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 .whole-slogan {
 	margin: auto;
-	max-width: 60ch;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	text-align: center;
 }
 
 .slogan h1 {
@@ -68,21 +77,11 @@ header {
 	line-height: 2ch;
 }
 
-.slogan-part-1 {
-	text-align: left;
-	padding-left: 1ch;
-}
-
-.slogan-part-2 {
-	text-align: right;
-	padding-right: 1ch;
-}
-
 .philosophy {
-	padding-top: ch;
-	padding-bottom: ;
+	padding: 2ch;
 	background-color: whitesmoke;
 	height: 23vh;
+	margin: auto;
 }
 
 .philosophy p {
@@ -120,12 +119,13 @@ a:visited {
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
-	height: 70vh;
+	overflow-x: hidden;
+	height: 60vw;
+	min-height: 90vh;
 }
 
 .process-intro {
-	padding-top: 10vh;
-	padding-bottom: 7vh;
+	padding: 10vh;
 }
 
 .process-intro h2 {
@@ -148,23 +148,27 @@ a:visited {
 }
 
 .step-one {
-	height: 60vh;
-}
-
-.step-one .text {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 60ch;
+	padding: 0 0;	
 }
 
 .step-one h3 {
 	font-family: 'Quando';
 	text-align: center;
-	line-height: 1.5ch;
+	line-height: 1ch;
+}
+
+.step-one .step-one-second-font{
+	font-size: calc(1.5 *(.75rem + 1vw));
+	}
+
+.step-one .text {
+	margin: auto auto;
+	max-width: 60ch;
 }
 
 .step-one p {
-	font-family: 'Oswald';
+	font-family: 'PT Sans Narrow', sans-serif;
+	line-height: 3ch;
 }
 
 .step-two {
@@ -198,7 +202,8 @@ a:visited {
 	background-repeat: no-repeat;
 	background-color: black;
 	background-size: cover;
-	width: 100% position: relative;
+	width: 100%;
+	position: relative;
 	overflow-y: hidden;
 }
 
@@ -216,13 +221,14 @@ a:visited {
 	font-family: 'Nixie One', cursive;
 	font-weight: bolder;
 	color: #e5ca9d;
-	line-height: 1.2ch;
+	line-height: 1.5ch;
 }
 
 .step-three .step-three-second-font {
 	font-family: 'sacramento', cursive;
 	font-weight: normal;
 	font-style: italic;
+	line-height: 0ch;
 }
 
 .step-three p {
@@ -268,7 +274,7 @@ a:visited {
 }
 
 footer {
-	background-color: darkslategrey;
+	background-color: #7f8c8d;
 }
 
 .copyright {
@@ -279,5 +285,5 @@ footer {
 .developers {
 	padding-left: 10vw;
 	text-align: right;
-	border: 3px solid red;
+
 }
