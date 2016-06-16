@@ -1,21 +1,19 @@
-h1 {
-	font-size: calc(5.063 * (.75rem + 1vw));
-}
 
-h2 {
+
+h1 {
 	font-size: calc(3.375 * (.75rem + 1vw));
 	line-height: 2ch;
 }
 
-h3 {
-	font-size: calc(2.25 * (.75rem + 1vw));
+h2 {
+	font-size: calc(2.25 * (.7rem + .5vh));
 	line-height: 2ch;
 }
 
+
 p {
-	font-size: calc(.75rem + 1vw);
-	max-width: 75ch;
-	line-height: 2ch;
+	max-width: 60ch;
+	font-size: calc(.7rem + .5vh);
 }
 
 .layout-transparent {
@@ -26,9 +24,8 @@ p {
 .layout-transparent .mdl-layout__drawer-button {
 	/* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-	color: whitesmoke;
-	background-color: black;
-	opacity: .9
+	color: #F2424D;
+	background-color: #FFFFFF;
 }
 
 header {
@@ -36,22 +33,23 @@ header {
 }
 
 .mdl-layout__title {
-	font-family: 'Sura', serif;
+	1font-family: 'Sura', serif;
 	font-size: calc(1.5*(.75rem + 1vw));
 }
 
-.navBig {
-	font-family: 'Sura', serif;
+.mdl-layout__header-row .mdl-navigation__link {
+	1font-family: 'Sura', serif;
 	font-size: calc(0.667 *(.75rem + 1vw));
+	color: #1a1a1a;
 }
 
 .navSmall {
-	font-family: 'Sura', serif;
+	1font-family: 'Sura', serif;
 	font-size: calc(1 *(.75rem + 1vw));
 }
 
 .slogan {
-	background-image: url(hands.jpg);
+	background-image: url(twoface.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -73,7 +71,7 @@ header {
 
 .slogan h1 {
 	color: whitesmoke;
-	font-family: 'Oswald';
+	1font-family: 'Oswald';
 	font-weight: normal;
 	opacity: .7;
 	line-height: 2ch;
@@ -81,8 +79,8 @@ header {
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-	color: navajowhite;
-	background-color: #FF5722;
+	color: whitesmoke;
+	background-color: #F2424D;
 	text-transform: none;
 }
 
@@ -95,7 +93,7 @@ header {
 	text-align: center;
 }
 
-.slogan .pinky button {
+.slogan .slogan-cta button {
 	font-size: 25px;
 	width: 15ch;
 	height: 3ch;
@@ -107,22 +105,103 @@ header {
 }
 
 .philosophy {
-	padding: 2ch;
-	background-color: #fcfcfc;
-	height: 23vh;
-	margin: auto;
+	background-color: #FFFFFF;
 }
 
-.philosophy p {
-	color: black;
-	opacity: .84;
-	font-family: Montserrat;
-	max-width: 50ch;
-	margin: 0 auto;
-	line-height: 1.5;
+.philosophy h2, .philosophy p {
+	color: #333;
+}
+
+.philosophy h2 {
+	margin: auto;
+	transform: translateY(50%);
 	text-align: center;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+}
+
+.services {
+	background-color: #F6F7F2;
+}
+
+.services h2, .services p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60ch;
+	text-align: center;
+}
+
+.lists {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 130ch;
+}
+
+
+.first-list{
+	float: left;
+	max-width: 60ch;
+	text-align: right;
+}
+
+.second-list{
+	float: right;
+	max-width: 60ch;
+	text-align: left;
+}
+
+.lists dd {
+	margin: 0;
+}
+
+.process {
+	background-color: #F8D9D5;
+}
+
+.contact {
+	background-color: #F6F6F6;
+}
+
+.price-quote p {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 60ch;
+}
+
+
+.contact-info p {
+	max-width: 30ch;
+	margin: auto; 
+}
+
+.more-info p {
+	margin: auto;
+	max-width: 40ch;
+}
+
+
+.contact {
+	background-color: #F6F6F6;
+	height: 70vh;
+	color: #1A1A1A;
+}
+
+.contact h2 {
+	text-align: center;
+}
+
+footer {
+	border-top: 1px dashed pink;
+	background-color: #1a1a1a;
+	padding-top: 7px;
+	
+}
+
+footer p {
+	font-size: 15px;
+	color: beige;
+		
+}
+.copyright {
+	padding-left: 5vw;
+	text-align: left;
 }
 
