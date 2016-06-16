@@ -24,8 +24,8 @@ p {
 .layout-transparent .mdl-layout__drawer-button {
 	/* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-	color: #F2424D;
-	background-color: #FFFFFF;
+	color: #fff;
+	background-color: #303F9F;
 }
 
 header {
@@ -40,7 +40,7 @@ header {
 .mdl-layout__header-row .mdl-navigation__link {
 	1font-family: 'Sura', serif;
 	font-size: calc(0.667 *(.75rem + 1vw));
-	color: #1a1a1a;
+	color: #fff;
 }
 
 .navSmall {
@@ -53,7 +53,7 @@ header {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	1background-size: cover;
 	height: 80vh;
 	width: 100%;
 	position: relative;
@@ -70,17 +70,18 @@ header {
 }
 
 .slogan h1 {
-	color: whitesmoke;
+	color: #FF1744;
 	1font-family: 'Oswald';
 	font-weight: normal;
-	opacity: .7;
+	opacity: .84;
 	line-height: 2ch;
+	background-color: black;
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
 	color: whitesmoke;
-	background-color: #F2424D;
+	background-color: #FF1744;
 	text-transform: none;
 }
 
@@ -105,7 +106,7 @@ header {
 }
 
 .philosophy {
-	background-color: #FFFFFF;
+	background-color: #F6F6F6;
 }
 
 .philosophy h2, .philosophy p {
@@ -119,7 +120,7 @@ header {
 }
 
 .services {
-	background-color: #F6F7F2;
+	background-color: #fff;
 }
 
 .services h2, .services p {
@@ -152,20 +153,28 @@ header {
 	margin: 0;
 }
 
-.process {
-	background-color: #F8D9D5;
+.tools {
+	background-color: #EFEEEF;
 }
 
-.contact {
+.process {
 	background-color: #F6F6F6;
 }
 
+.contact {
+	background-color: #1A1A1A;
+	height: 70vh;
+	color: #F6F6F6;
+}
+
+.contact h2 {
+	text-align: center;
+}
 .price-quote p {
 	text-align: center;
 	margin: 0 auto;
 	max-width: 60ch;
 }
-
 
 .contact-info p {
 	max-width: 30ch;
@@ -177,16 +186,11 @@ header {
 	max-width: 40ch;
 }
 
-
-.contact {
-	background-color: #F6F6F6;
-	height: 70vh;
-	color: #1A1A1A;
+button.survey {
+	margin: 0 auto;
 }
 
-.contact h2 {
-	text-align: center;
-}
+
 
 footer {
 	border-top: 1px dashed pink;
