@@ -1,5 +1,3 @@
-
-
 h1 {
 	font-size: calc(3.375 * (.75rem + 1vw));
 	line-height: 2ch;
@@ -10,15 +8,12 @@ h2 {
 	line-height: 2ch;
 }
 
-
 p {
 	max-width: 60ch;
 	font-size: calc(.7rem + .5vh);
 }
 
-.layout-transparent {
-	
-}
+.layout-transparent {}
 
 .layout-transparent .mdl-layout__header,
 .layout-transparent .mdl-layout__drawer-button {
@@ -71,20 +66,14 @@ header {
 
 .slogan h1 {
 	color: #FF1744;
-	1font-family: 'Oswald';
-	font-weight: normal;
 	opacity: .84;
-	line-height: 2ch;
 	background-color: black;
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
 .mdl-button--accent.mdl-button--accent.mdl-button--fab {
-	color: whitesmoke;
 	background-color: #FF1744;
-	text-transform: none;
 }
-
 
 .slogan .slogan-cta {
 	margin: auto;
@@ -94,36 +83,31 @@ header {
 	text-align: center;
 }
 
-.slogan .slogan-cta button {
-	font-size: 25px;
-	width: 15ch;
-	height: 3ch;
-	
-}
-
-.mdl-button {
-	background-color: #FF5722;
+.slogan .slogan-cta .mdl-button {
+	width: auto;
+	height: ch;
 }
 
 .philosophy {
 	background-color: #F6F6F6;
-}
-
-.philosophy h2, .philosophy p {
-	color: #333;
-}
-
-.philosophy h2 {
-	margin: auto;
-	transform: translateY(50%);
+	height: auto;
 	text-align: center;
 }
 
-.services {
-	background-color: #fff;
+.philosophy p {
+	color: #333;
+	margin: 0 auto;
 }
 
-.services h2, .services p {
+.philosophy h2 {}
+
+.services {
+	background-color: #fff;
+	height: 70vh;
+}
+
+.services h2,
+.services p {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 60ch;
@@ -136,14 +120,13 @@ header {
 	max-width: 130ch;
 }
 
-
-.first-list{
+.first-list {
 	float: left;
 	max-width: 60ch;
 	text-align: right;
 }
 
-.second-list{
+.second-list {
 	float: right;
 	max-width: 60ch;
 	text-align: left;
@@ -153,59 +136,138 @@ header {
 	margin: 0;
 }
 
+.if-there {
+	margin: 0 auto;
+}
+
 .tools {
 	background-color: #EFEEEF;
+	height: auto;
+	padding-top: 4ch;
+	padding-bottom: 4ch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tools .text {
+	height: auto;
+}
+
+.tools .text h2 {
+	margin: auto;
+	max-width: 15ch;
+	text-align: center;
+}
+
+.tools .text p {
+	margin: auto;
+}
+
+.tools .images {
+	margin: auto;
+	max-width: 90%;
+	text-align: center;
+}
+
+.tools img {
+	padding: 7px;
+	margin: 0;
+}
+
+.training {
+	height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.training .text h3 {
+	margin: auto;
+	text-align: center;
+}
+
+.training .text p {
+	margin: auto;
 }
 
 .process {
 	background-color: #F6F6F6;
+	height: auto;
+	/*
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	*/
 }
 
-.contact {
+.mdl-card__supporting-text {
+	max-width: 60ch;
+}
+/*
+.first-row, .second-row, .third-row {
+	max-width: 50%;
+}
+
+.first-row {
+	align-self: flex-start;
+}
+
+.design, .developement {
+}
+
+.third-row {
+	align-self: flex-end;
+}
+
+*/
+
+
+
+
+
+.price-quote-and-contact {
 	background-color: #1A1A1A;
 	height: 70vh;
 	color: #F6F6F6;
 }
 
-.contact h2 {
+.price-quote h2 {
 	text-align: center;
 }
+
 .price-quote p {
 	text-align: center;
 	margin: 0 auto;
 	max-width: 60ch;
 }
 
-.contact-info p {
-	max-width: 30ch;
-	margin: auto; 
+.contact-info  {
+	max-width: 60ch;
+	margin-left:
 }
 
-.more-info p {
-	margin: auto;
+.more-info {
 	max-width: 40ch;
+	margin-top: -15px;
 }
 
-button.survey {
-	margin: 0 auto;
+.survey-button {
+	text-align: center;
 }
-
-
 
 footer {
 	border-top: 1px dashed pink;
 	background-color: #1a1a1a;
 	padding-top: 7px;
-	
 }
 
 footer p {
 	font-size: 15px;
 	color: beige;
-		
 }
+
 .copyright {
 	padding-left: 5vw;
 	text-align: left;
 }
-
