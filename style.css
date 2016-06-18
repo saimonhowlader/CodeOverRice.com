@@ -1,5 +1,5 @@
 1h1 {
-	font-size: calc(3.375 * (.75rem + 1vw));
+	font-size: calc(2.25 * (.75rem + 1vw));
 	line-height: 2ch;
 }
 
@@ -46,7 +46,7 @@ a.mdl-navigation__link:hover {
 	font-size: calc(1 *(.75rem + 1vw));
 }
 
-.slogan {
+.hero {
 	background-image: url(twoface.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -60,17 +60,20 @@ a.mdl-navigation__link:hover {
 	overflow-x: hidden;
 }
 
-.whole-slogan {
-	1margin: auto;
+.slogan {
+	height: 14ch;
 	position: relative;
 	top: 50%;
-	transform: translateY(-25%);
-	text-align: center;
 }
 
 .slogan h1 {
-	color: #B3B3B3;
+	margin: auto;
+	width: 20ch;
+	text-align: center;
 	background-color: #1a1a1a;
+	color: lightgrey;
+	font-size: calc(2.25 * (.75rem + 1vw));
+	
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
@@ -78,7 +81,7 @@ a.mdl-navigation__link:hover {
 	background-color: #FF1744;
 }
 
-.slogan .slogan-cta {
+.hero .slogan-cta {
 	margin: auto;
 	position: relative;
 	top: 50%;
@@ -86,9 +89,8 @@ a.mdl-navigation__link:hover {
 	text-align: center;
 }
 
-.slogan .slogan-cta .mdl-button {
+.hero .slogan-cta .mdl-button {
 	width: auto;
-	height: ch;
 }
 
 .philosophy {
