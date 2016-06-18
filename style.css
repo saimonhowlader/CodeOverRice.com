@@ -1,45 +1,48 @@
-h1 {
+1h1 {
 	font-size: calc(3.375 * (.75rem + 1vw));
 	line-height: 2ch;
 }
 
-h2 {
+1h2 {
 	font-size: calc(2.25 * (.7rem + .5vh));
 	line-height: 2ch;
 }
 
 p {
 	max-width: 60ch;
-	font-size: calc(.7rem + .5vh);
+	1font-size: calc(.7rem + .5vh);
 }
 
-.layout-transparent {}
-
-.layout-transparent .mdl-layout__header,
-.layout-transparent .mdl-layout__drawer-button {
+.layout-transparent .mdl-layout__header
+ {
 	/* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
 	color: #fff;
-	background-color: #303F9F;
+	background-color: #1a1a1a;
 }
 
-header {
-	height: 7vh;
+.layout-transparent .mdl-layout__drawer-button {
+	color: #FF1744;
 }
+
 
 .mdl-layout__title {
-	1font-family: 'Sura', serif;
-	font-size: calc(1.5*(.75rem + 1vw));
+	font-family: 'Sura', serif;
+	font-size: calc(.75rem + 1vw);
 }
 
-.mdl-layout__header-row .mdl-navigation__link {
-	1font-family: 'Sura', serif;
+a.mdl-navigation__link  {
 	font-size: calc(0.667 *(.75rem + 1vw));
-	color: #fff;
+	color: #ffffff;
+	
+}
+
+a.mdl-navigation__link:hover {
+	color: #17FF3F;
+	opacity: 1;
 }
 
 .navSmall {
-	1font-family: 'Sura', serif;
 	font-size: calc(1 *(.75rem + 1vw));
 }
 
@@ -47,9 +50,10 @@ header {
 	background-image: url(twoface.jpeg);
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	1background-attachment: fixed;
 	1background-size: cover;
-	height: 80vh;
+	background-color: #E7E3E2;
+	height: 65vh;
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
@@ -57,17 +61,16 @@ header {
 }
 
 .whole-slogan {
-	margin: auto;
+	1margin: auto;
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-25%);
 	text-align: center;
 }
 
 .slogan h1 {
-	color: #FF1744;
-	opacity: .84;
-	background-color: black;
+	color: #B3B3B3;
+	background-color: #1a1a1a;
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
@@ -89,21 +92,48 @@ header {
 }
 
 .philosophy {
+	padding-top: 10vh;
+	padding-bottom: 5vh;
 	background-color: #F6F6F6;
 	height: auto;
 	text-align: center;
+	color: #1a1a1a;
 }
 
-.philosophy p {
-	color: #333;
+.price-quote-and-contact {
+	background-color: #1A1A1A;
+	height: auto;
+	color: #F6F6F6;
+}
+
+.price-quote {
+	padding-bottom: 15ch;
+}
+.price-quote h2 {
+	text-align: center;
+}
+
+.price-quote p {
+	text-align: center;
 	margin: 0 auto;
+	max-width: 60ch;
 }
 
-.philosophy h2 {}
+.contact-info  {
+	max-width: 60ch;
+	margin-left:
+}
+
+.more-info {
+	max-width: 40ch;
+}
+.survey-button {
+	text-align: center;
+}
 
 .services {
 	background-color: #fff;
-	height: 70vh;
+	height: auto;
 }
 
 .services h2,
@@ -114,34 +144,31 @@ header {
 	text-align: center;
 }
 
-.lists {
+.mdl-list__item-icon, .mdl-list__item-icon.material-icons {
+	font-size: 48px;
+	color: #FF1744;
+}
+
+.mdl-list__item-text-body {
+	max-width: 60ch;
+}
+
+.lists ul {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 130ch;
+	width: 60ch;
 }
 
 .first-list {
-	float: left;
-	max-width: 60ch;
-	text-align: right;
-}
-
-.second-list {
-	float: right;
-	max-width: 60ch;
-	text-align: left;
-}
-
-.lists dd {
+	padding: 0;
 	margin: 0;
 }
-
 .if-there {
 	margin: 0 auto;
 }
 
 .tools {
-	background-color: #EFEEEF;
+	background-color: #F6F6F6;
 	height: auto;
 	padding-top: 4ch;
 	padding-bottom: 4ch;
@@ -152,16 +179,20 @@ header {
 
 .tools .text {
 	height: auto;
+	color: #1a1a1a;
 }
 
 .tools .text h2 {
 	margin: auto;
-	max-width: 15ch;
+	max-width: 20ch;
 	text-align: center;
 }
 
 .tools .text p {
+	padding-top: 5ch;
+	padding-bottom: 5ch;
 	margin: auto;
+	text-indent: 5ch;
 }
 
 .tools .images {
@@ -180,6 +211,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #1a1a1a;
+	color: aliceblue
 }
 
 .training .text h3 {
@@ -192,7 +225,7 @@ header {
 }
 
 .process {
-	background-color: #F6F6F6;
+	background-color: #fcfcfc;
 	height: auto;
 	/*
 	display: flex;
@@ -203,57 +236,6 @@ header {
 
 .mdl-card__supporting-text {
 	max-width: 60ch;
-}
-/*
-.first-row, .second-row, .third-row {
-	max-width: 50%;
-}
-
-.first-row {
-	align-self: flex-start;
-}
-
-.design, .developement {
-}
-
-.third-row {
-	align-self: flex-end;
-}
-
-*/
-
-
-
-
-
-.price-quote-and-contact {
-	background-color: #1A1A1A;
-	height: 70vh;
-	color: #F6F6F6;
-}
-
-.price-quote h2 {
-	text-align: center;
-}
-
-.price-quote p {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 60ch;
-}
-
-.contact-info  {
-	max-width: 60ch;
-	margin-left:
-}
-
-.more-info {
-	max-width: 40ch;
-	margin-top: -15px;
-}
-
-.survey-button {
-	text-align: center;
 }
 
 footer {
