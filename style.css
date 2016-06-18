@@ -102,6 +102,11 @@ a.mdl-navigation__link:hover {
 	color: #1a1a1a;
 }
 
+.philosophy p {
+	margin: auto;
+	max-width: 50ch;
+}
+
 .price-quote-and-contact {
 	background-color: #1A1A1A;
 	height: auto;
