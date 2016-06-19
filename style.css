@@ -283,6 +283,7 @@ a.mdl-navigation__link:hover {
 	padding-top: 5ch;
 	padding-bottom: 5ch;
 	margin: auto;
+	max-width: 50ch;
 	text-indent: 5ch;
 }
 
@@ -297,24 +298,6 @@ a.mdl-navigation__link:hover {
 	margin: 0;
 }
 
-.training {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #1a1a1a;
-	color: aliceblue
-}
-
-.training .text h2 {
-	margin: auto;
-	text-align: center;
-}
-
-.training .text p {
-	margin: auto;
-	text-indent: 4ch;
-}
-
 .process {
 	background-color: #fcfcfc;
 	height: auto;
@@ -323,6 +306,32 @@ a.mdl-navigation__link:hover {
 .mdl-card__supporting-text {
 	max-width: 60ch;
 }
+
+.training {
+	background-color: #1a1a1a;
+	color: aliceblue
+}
+
+.training .text h2 {
+	margin: auto;
+	text-align: center;
+	padding-top: 2ch;
+}
+
+.training .text p {
+	margin: auto;
+	text-indent: 4ch;
+	padding-top: 5ch;
+	padding-bottom: 5ch;
+	max-width: 60ch;
+}
+
+.training .contact-info {
+	padding-top: 12ch;
+	padding-bottom: 0;
+}
+
+
 
 footer {
 	border-top: 1px solid #f6f6f6;
