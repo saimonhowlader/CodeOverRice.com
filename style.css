@@ -1,22 +1,78 @@
-1h1 {
-	font-size: calc(2.25 * (.75rem + 1vw));
-	line-height: 2ch;
+html, body {
+	font-size: 16px;
 }
 
-1h2 {
-	font-size: calc(2.25 * (.7rem + .5vh));
-	line-height: 2ch;
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.14rem;
+}
+
+h3 {
+	font-size: 1.07rem;
 }
 
 p {
-	max-width: 60ch;
-	1font-size: calc(.7rem + .5vh);
+	font-size: 1rem;
 }
 
-.layout-transparent .mdl-layout__header
- {
-	/* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
+@media screen and (min-width: 20rem) {
+	h1 {
+		font-size: calc(2rem + 2 * ((100vw - 20rem) / 60));
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	h1 {
+		font-size: 4rem;
+		font-weight: 300;
+		letter-spacing: -2px;
+		line-height: 5rem;
+	}
+}
+
+
+@media screen and (min-width: 20rem) {
+	h2 {
+		font-size: calc(1.14rem + 2.36 * ((100vw - 20rem) / 60));
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	h2 {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (min-width: 30rem) {
+	h3 {
+		font-size: calc(1.07rem + 0.18 * ((100vw - 20rem) / 60));
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	h3, {
+		font-size: 1.25rem;
+	}
+}
+
+@media screen and (min-width: 30rem) {
+	p {
+		font-size: calc(1rem + 0.125 * ((100vw - 20rem) / 60));
+	}
+}
+
+@media screen and (min-width: 80rem) {
+	p {
+		font-size: 1.125rem;
+	}
+}
+
+
+
+.layout-transparent .mdl-layout__header {
 	color: #fff;
 	background-color: #1a1a1a;
 }
@@ -25,16 +81,14 @@ p {
 	color: #FF1744;
 }
 
-
 .mdl-layout__title {
 	font-family: 'Sura', serif;
-	font-size: calc(.75rem + 1vw);
+	1font-size: calc(.75rem + 1vw);
 }
 
-a.mdl-navigation__link  {
-	font-size: calc(0.667 *(.75rem + 1vw));
+a.mdl-navigation__link {
+	1font-size: calc(0.667 *(.75rem + 1vw));
 	color: #ffffff;
-	
 }
 
 a.mdl-navigation__link:hover {
@@ -43,7 +97,7 @@ a.mdl-navigation__link:hover {
 }
 
 .navSmall {
-	font-size: calc(1 *(.75rem + 1vw));
+	1font-size: calc(1 *(.75rem + 1vw));
 }
 
 .hero {
@@ -72,8 +126,6 @@ a.mdl-navigation__link:hover {
 	text-align: center;
 	background-color: #1a1a1a;
 	color: lightgrey;
-	font-size: calc(2.25 * (.75rem + 1vw));
-	
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised,
@@ -94,7 +146,7 @@ a.mdl-navigation__link:hover {
 }
 
 .philosophy {
-	padding-top: 10vh;
+	padding-top: 7vh;
 	padding-bottom: 5vh;
 	background-color: #F6F6F6;
 	height: auto;
@@ -105,37 +157,65 @@ a.mdl-navigation__link:hover {
 .philosophy p {
 	margin: auto;
 	max-width: 50ch;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 
 .price-quote-and-contact {
 	background-color: #1A1A1A;
-	height: auto;
 	color: #F6F6F6;
+	padding-top: 7ch;
+	padding-bottom: 5ch;
 }
 
 .price-quote {
-	padding-bottom: 15ch;
+	padding-bottom: 10ch;
 }
+
 .price-quote h2 {
 	text-align: center;
 }
 
-.price-quote p {
+.price-quote h3 {
 	text-align: center;
 	margin: 0 auto;
 	max-width: 60ch;
 }
 
-.contact-info  {
-	max-width: 60ch;
-	margin-left:
+.contact-info {
+	max-width: 40ch;
+	margin: auto;
+	padding-bottom: 8ch
+}
+
+.contact-info .mdl-list__item {
+	color: #F6F6F6;
+}
+
+.contact-info .mdl-list__item-icon,
+.contact-info .mdl-list__item-icon.material-icons {
+	1font-size: 48px;
+	color: #17FF3F;
+}
+
+.contact-info ul {
+	padding: 0;
+	margin: auto;
 }
 
 .more-info {
 	max-width: 40ch;
+	margin: auto;
+	margin-right: auto;
+	text-align: center;
 }
+
 .survey-button {
 	text-align: center;
+}
+
+.survey-button .mdl-button {
+	background-color: #17FF3F;
 }
 
 .services {
@@ -151,25 +231,29 @@ a.mdl-navigation__link:hover {
 	text-align: center;
 }
 
-.mdl-list__item-icon, .mdl-list__item-icon.material-icons {
-	font-size: 48px;
+.services .mdl-list__item-icon,
+.services .mdl-list__item-icon.material-icons {
+	font-size: 2rem;
 	color: #FF1744;
 }
 
 .mdl-list__item-text-body {
 	max-width: 60ch;
+	text-indent: 0
 }
 
 .lists ul {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60ch;
+	max-width: 60ch;
+	padding: 0;
 }
 
 .first-list {
 	padding: 0;
 	margin: 0;
 }
+
 .if-there {
 	margin: 0 auto;
 }
@@ -214,7 +298,6 @@ a.mdl-navigation__link:hover {
 }
 
 .training {
-	height: 60vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -222,23 +305,19 @@ a.mdl-navigation__link:hover {
 	color: aliceblue
 }
 
-.training .text h3 {
+.training .text h2 {
 	margin: auto;
 	text-align: center;
 }
 
 .training .text p {
 	margin: auto;
+	text-indent: 4ch;
 }
 
 .process {
 	background-color: #fcfcfc;
 	height: auto;
-	/*
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	*/
 }
 
 .mdl-card__supporting-text {
@@ -246,17 +325,22 @@ a.mdl-navigation__link:hover {
 }
 
 footer {
-	border-top: 1px dashed pink;
+	border-top: 1px solid #f6f6f6;
 	background-color: #1a1a1a;
-	padding-top: 7px;
+	padding-top: px;
 }
 
 footer p {
-	font-size: 15px;
+	font-size: .75rem;
 	color: beige;
 }
 
 .copyright {
 	padding-left: 5vw;
 	text-align: left;
+}
+
+.developers {
+	text-align: right;
+	padding-right: 5vw;
 }
