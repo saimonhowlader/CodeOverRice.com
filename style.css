@@ -101,12 +101,12 @@ a.mdl-navigation__link:hover {
 }
 
 .hero {
-	background-image: url(twoface.jpeg);
+	background-image: url(hands.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
-	1background-attachment: fixed;
-	1background-size: cover;
-	background-color: #E7E3E2;
+	background-attachment: fixed;
+	background-size: cover;
+	1background-color: #E7E3E2;
 	height: 65vh;
 	width: 100%;
 	position: relative;
