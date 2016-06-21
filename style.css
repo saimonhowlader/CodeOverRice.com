@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
 	font-size: 16px;
 }
 
@@ -33,7 +34,6 @@ p {
 	}
 }
 
-
 @media screen and (min-width: 20rem) {
 	h2 {
 		font-size: calc(1.14rem + 2.36 * ((100vw - 20rem) / 60));
@@ -53,7 +53,8 @@ p {
 }
 
 @media screen and (min-width: 80rem) {
-	h3, {
+	h3,
+	{
 		font-size: 1.25rem;
 	}
 }
@@ -69,8 +70,6 @@ p {
 		font-size: 1.125rem;
 	}
 }
-
-
 
 .layout-transparent .mdl-layout__header {
 	color: #fff;
@@ -302,49 +301,62 @@ a.mdl-navigation__link:hover {
 	max-width: 60ch;
 }
 
-.training {
+.faq {
 	background-color: #1a1a1a;
-	color: aliceblue
+	color: #f6f6f6;
 }
 
-.training .text h2 {
+.faq .text h2 {
 	margin: auto;
 	text-align: center;
-	padding-top: 2ch;
+	padding: 2ch;
+	line-height: 2ch;
 }
 
-.training .text p {
-	margin: auto;
-	text-indent: 4ch;
-	padding-top: 5ch;
-	padding-bottom: 5ch;
-	max-width: 60ch;
+.question {
+	cursor: pointer;
+	display: block;
+	background: #1a1a1a;
+}
+.question + input {
+	display: none;
+	/* hide the checkboxes */
+}
+.question + input + .answer {
+	display: none;
+}
+.question + input:checked + .answer {
+	display: block;
+}
+.question span {
+	display: inline-block;
 }
 
-.training .contact-info {
-	padding-top: 12ch;
-	padding-bottom: 0;
-}
-
-
-
-footer {
-	border-top: 1px solid #f6f6f6;
-	background-color: #1a1a1a;
-	padding-top: px;
-}
-
-footer p {
-	font-size: .75rem;
-	color: beige;
-}
-
-.copyright {
-	padding-left: 5vw;
-	text-align: left;
-}
-
-.developers {
-	text-align: right;
-	padding-right: 5vw;
+.faq .material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1rem;
+	/* Preferred icon size */
+	
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	color: #FF1744;
+	/* Support for all WebKit browsers. */
+	
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	
+	font-feature-settings: 'liga';
 }
