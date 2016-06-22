@@ -106,7 +106,7 @@ a.mdl-navigation__link:hover {
 	background-attachment: fixed;
 	background-size: cover;
 	1background-color: #E7E3E2;
-	height: 65vh;
+	height: calc(.8 * (100vh - 64px));
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
@@ -145,25 +145,25 @@ a.mdl-navigation__link:hover {
 }
 
 .philosophy {
-	padding-top: 7vh;
-	padding-bottom: 5vh;
-	background-color: white;
-	height: auto;
+	padding-top: ch;
+	padding-bottom: 1ch;
+	background-color: #1a1a1a;
+	height: calc(.15 * (100vh - 64px));
 	text-align: center;
-	color: #1a1a1a;
+	color: #f6f6f6;
 }
 
 .philosophy p {
 	margin: auto;
 	max-width: 50ch;
 	font-size: 1.5rem;
-	line-height: 2rem;
+	padding-top: calc(.5 * .15 * (100vh - 64px) - 1ch);	
 }
 
 .services {
 	background-color: #f6f6f6;
 	height: auto;
-	padding: 
+	padding: 3vw;
 }
 
 .services h3,
@@ -172,8 +172,6 @@ a.mdl-navigation__link:hover {
 	margin-right: auto;
 	max-width: 45ch;
 	text-align: center;
-	padding-top: 1ch;
-	padding-bottom: 2ch;
 }
 
 .services .mdl-list__item-icon,
@@ -183,13 +181,13 @@ a.mdl-navigation__link:hover {
 }
 
 .profiles {
-	height: 400px;
-	background-color: white
+	height: calc(.8 * (100vh - 64px));
+	background-color: #f6f6f6;
 }
 
 .process {
-	background-color: #f6f6f6;
-	height: auto;
+	background-color: #fcfcfc;
+	height: 30vh;
 	padding: 3vw;
 	text-align: center;
 }
@@ -234,8 +232,8 @@ a.mdl-navigation__link:hover {
 }
 
 .faq {
-	background-color: white;
-	color: #f6f6f6;
+	background-color: #f6f6f6;
+	color: #1a1a1a;
 }
 
 .faq .text h2 {
@@ -248,7 +246,7 @@ a.mdl-navigation__link:hover {
 .question {
 	cursor: pointer;
 	display: block;
-	background: #1a1a1a;
+	background: gray;
 }
 .question + input {
 	display: none;
