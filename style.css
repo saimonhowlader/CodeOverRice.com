@@ -81,8 +81,7 @@ p {
 }
 
 .mdl-layout__title {
-	font-family: 'Sura', serif;
-	1font-size: calc(.75rem + 1vw);
+	font-size: calc(1.2* (.75rem + 1vw));
 }
 
 a.mdl-navigation__link {
@@ -100,17 +99,32 @@ a.mdl-navigation__link:hover {
 }
 
 .hero {
-	background-image: url(hands.jpg);
+	background-image: url(hero.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	1background-color: #E7E3E2;
-	height: calc(.8 * (100vh - 64px));
+	height: calc(.85 * (100vh - 64px));
 	width: 100%;
 	position: relative;
 	overflow-y: hidden;
 	overflow-x: hidden;
+}
+
+.saimon, .sean {
+	height: 100%;
+}
+.heroes img {
+	width: auto;
+    height: auto;
+}
+
+.sean .hero-image {
+	background-image: url(sean.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	height: 100%;
 }
 
 .slogan {
@@ -145,8 +159,6 @@ a.mdl-navigation__link:hover {
 }
 
 .philosophy {
-	padding-top: ch;
-	padding-bottom: 1ch;
 	background-color: #1a1a1a;
 	height: calc(.15 * (100vh - 64px));
 	text-align: center;
@@ -154,23 +166,86 @@ a.mdl-navigation__link:hover {
 }
 
 .philosophy p {
-	margin: auto;
-	max-width: 50ch;
+	padding-top: calc(.45 * .15 * (100vh - 64px) - 1ch);
+	margin: 0 auto;
+	max-width: 60ch;
 	font-size: 1.5rem;
-	padding-top: calc(.5 * .15 * (100vh - 64px) - 1ch);	
 }
 
-.services {
+.promises {
 	background-color: #f6f6f6;
 	height: auto;
-	padding: 3vw;
 }
 
-.services h3,
-.services .mdl-card__supporting-text {
+.promise-cards {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.promise-cards .mdl-cell {
+	height: 20ch;
+}
+
+.promises h3,
+.promises .mdl-card__supporting-text {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 45ch;
+	max-width: 40ch;
+	text-align: center;
+	padding-top: 1ch;
+	padding-bottom: ch;
+}
+
+.promises h3{
+	text-transform: uppercase;
+	color: #00b21f;
+	font-weight: 400;
+}
+
+.promises .mdl-card{
+	max-width: 60ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.profiles {
+	height: calc(.8 * (100vh - 64px));
+	background-color: #fcfcfc;
+	background-image: url(sa)
+}
+
+.portfolio .text {
+	background-image: url(portfolio.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	text-align: right;
+	
+}
+
+.portfolio h2, .portfolio h3 {
+	padding-right: 15vw;
+}
+
+
+
+
+.services {
+	background-color: #fff;
+	height: auto;
+}
+
+.services h2,
+.services p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60ch;
 	text-align: center;
 }
 
@@ -180,20 +255,34 @@ a.mdl-navigation__link:hover {
 	color: #FF1744;
 }
 
-.profiles {
-	height: calc(.8 * (100vh - 64px));
-	background-color: #f6f6f6;
+.mdl-list__item-text-body {
+	max-width: 60ch;
+	text-indent: 0
+}
+
+.lists ul {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60ch;
+	padding: 0;
+}
+
+.if-there {
+	margin: 0 auto;
 }
 
 .process {
-	background-color: #fcfcfc;
-	height: 30vh;
+	background-color: #f6f6f6;
+	height: auto;
 	padding: 3vw;
 	text-align: center;
 }
 
 .process h3 {
-	margin: auto
+	padding-top: 1.5ch;
+	margin: 0 auto;
+	font-size: calc(2 * (1.07rem + 0.18 * ((100vw - 20rem) / 60)));
+	color: #FF1744;
 }
 
 .process .material-icons {
@@ -202,7 +291,6 @@ a.mdl-navigation__link:hover {
 	font-style: normal;
 	font-size: 4rem;
 	/* Preferred icon size */
-	
 	display: inline-block;
 	line-height: 1;
 	text-transform: none;
@@ -212,16 +300,12 @@ a.mdl-navigation__link:hover {
 	direction: ltr;
 	color: #FF1744;
 	/* Support for all WebKit browsers. */
-	
 	-webkit-font-smoothing: antialiased;
 	/* Support for Safari and Chrome. */
-	
 	text-rendering: optimizeLegibility;
 	/* Support for Firefox. */
-	
 	-moz-osx-font-smoothing: grayscale;
 	/* Support for IE. */
-	
 	font-feature-settings: 'liga';
 	padding-bottom: 1ch;
 	padding-left: 40%;
@@ -229,38 +313,75 @@ a.mdl-navigation__link:hover {
 
 .mdl-card__supporting-text {
 	max-width: 60ch;
+	padding-bottom: 3ch;
 }
 
 .faq {
 	background-color: #f6f6f6;
 	color: #1a1a1a;
+	padding-top: 0;
+	padding-bottom: 5ch;
 }
 
-.faq .text h2 {
+.faq-button h2 {
 	margin: auto;
 	text-align: center;
-	padding: 2ch;
-	line-height: 2ch;
+	width: auto;
+	font-size: 2em;
+	color: #00b21f;
+}
+
+.faq .mdl-button {
+	height: auto;
+}
+
+.faq-button {
+	cursor: pointer;
+	display: block;
+	background: #f6f6f6;
+	border: 2px solid #00b21f;
+	max-width: 40ch;
+	margin: auto;
+}
+
+.faq-button + input {
+	display: none;
+	/* hide the checkboxes */
+}
+
+.faq-button + input + .questions-list {
+	display: none;
+}
+
+.faq-button + input:checked + .questions-list {
+	display: block;
+}
+
+.faq-button span {
+	display: inline-block;
 }
 
 .question {
 	cursor: pointer;
 	display: block;
-	background: gray;
+	background: #f6f6f6;
+	max-width: 60ch;
 }
+
 .question + input {
 	display: none;
 	/* hide the checkboxes */
 }
+
 .question + input + .answer {
 	display: none;
 }
+
 .question + input:checked + .answer {
 	display: block;
 }
-.question span {
-	display: inline-block;
-}
+
+
 
 .faq .material-icons {
 	font-family: 'Material Icons';
@@ -268,7 +389,6 @@ a.mdl-navigation__link:hover {
 	font-style: normal;
 	font-size: 1rem;
 	/* Preferred icon size */
-	
 	display: inline-block;
 	line-height: 1;
 	text-transform: none;
@@ -278,16 +398,12 @@ a.mdl-navigation__link:hover {
 	direction: ltr;
 	color: #FF1744;
 	/* Support for all WebKit browsers. */
-	
 	-webkit-font-smoothing: antialiased;
 	/* Support for Safari and Chrome. */
-	
 	text-rendering: optimizeLegibility;
 	/* Support for Firefox. */
-	
 	-moz-osx-font-smoothing: grayscale;
 	/* Support for IE. */
-	
 	font-feature-settings: 'liga';
 }
 
